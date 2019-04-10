@@ -14,17 +14,7 @@
 		}
 	
 		function initiate(){
-			//array = [];
-			var option = document.getElementById("card");
-			var text = "";
-			if (option.value == "English")
-				text = "English";
-			else if (option.value == "Hindi")
-				text = "Hindi";
-			else if (option.value == "Gujarati")
-				text = "Gujarati";
-			else
-				text = "Telegu";
+			
 
 			var mytrack = document.getElementById("englishTrack");
 			var obj = mytrack.track;
@@ -92,7 +82,17 @@
 		}
 
 		function setAudio(){
-			
+			//array = [];
+			var option = document.getElementById("card");
+			var text = "";
+			if (option.value == "English")
+				text = "English";
+			else if (option.value == "Hindi")
+				text = "Hindi";
+			else if (option.value == "Gujarati")
+				text = "Gujarati";
+			else
+				text = "Telegu";
 		
 			initiate();
 			
@@ -113,8 +113,8 @@
 	<br><br><br>
 	<video id="video" controls="controls" autoplay loop>
   		
-		<source src="/home/tanzeemalam/Desktop/Bhasha-Audio-Transcription-and-Video-Translation--master/videos/video1.mp4" type="video/mp4" />
-		<source src="/home/tanzeemalam/Desktop/Bhasha-Audio-Transcription-and-Video-Translation--master/videos/video1.webm" type="video/webm" />
+		<source src="video1.mp4" type="video/mp4" />
+		<source src="video1.webm" type="video/webm" />
 
   		<track id="englishTrack" label="English" kind="captions" srclang="en" 					  src="data:textvtt;base64,V0VCVlRUCgoxCjAwOjAwOjAxLjAwMCAtLT4gMDA6MDA6MDMuMjExCuKZquKZqgoKMgowMDowMDowNC40NjIgLS0+IDAwOjAwOjA1LjcxNApUT05ZIFNUQVJLOgpJdCBzZWVtcyBsaWtlIGEgdGhvdXNhbmQKCjMKMDA6MDA6MDUuNzE0IC0tPiAwMDowMDowNi43MTUKeWVhcnMgYWdvLi4uCgo0CjAwOjAwOjA3LjcxNiAtLT4gMDA6MDA6MDkuMTc1CkkgZm91Z2h0IG15IHdheSBvdXQKb2YgdGhhdCBjYXZlLi4uCgo1CjAwOjAwOjEwLjQyNyAtLT4gMDA6MDA6MTEuNTExCmJlY2FtZSBJcm9uIE1hbi4uLgoKNgowMDowMDoxNC44ODkgLS0+IDAwOjAwOjE2LjAxNgpyZWFsaXplZCBJIGxvdmVkIHlvdS4uLgoKNwowMDowMDoyMC41NjIgLS0+IDAwOjAwOjIyLjc3MgpJIGtub3cgSSBzYWlkIG5vIG1vcmUKc3VycHJpc2VzLCBidXQuLi4KCjgKMDA6MDA6MjIuNzcyIC0tPiAwMDowMDoyNi4yMzQKSSB3YXMgcmVhbGx5IGhvcGluZyB0bwpwdWxsIG9mZiBvbmUgbGFzdCBvbmUuCgo5CjAwOjAwOjI5LjE5NSAtLT4gMDA6MDA6MzEuMDMxClBFR0dZIENBUlRFUjoKVGhlIHdvcmxkIGhhcyBjaGFuZ2VkLgoKMTAKMDA6MDA6MzMuNDkxIC0tPiAwMDowMDozNS41MzUKTm9uZSBvZiB1cyBjYW4gZ28gYmFjay4uLgoKMTEKMDA6MDA6NDAuMDQwIC0tPiAwMDowMDo0MS42NjYKQWxsIHdlIGNhbgpkbyBpcyBvdXIgYmVzdC4uLgoKMTIKMDA6MDA6NDIuODM0IC0tPiAwMDowMDo0NS4xNzAKYW5kIHNvbWV0aW1lcyB0aGUKYmVzdCB0aGF0IHdlIGNhbiBkby4uLgoKMTMKMDA6MDA6NDYuOTIxIC0tPiAwMDowMDo0OC4yOTgKaXMgdG8gc3RhcnQgb3Zlci4KCjE0CjAwOjAwOjUxLjU1MSAtLT4gMDA6MDA6NTUuODQ3CuKZquKZqgoKMTUKMDA6MDE6MDAuNzI3IC0tPiAwMDowMTowMi43MjkKVEhPUjoKSSBzYXcgYWxsIHRoZXNlIHBlb3BsZSBkaWUuCgoxNgowMDowMTowNi45MDAgLS0+IDAwOjAxOjA4LjA2OApTVEVWRSBST0dFUlM6Ckkga2VlcCB0ZWxsaW5nIGV2ZXJ5Ym9keQoKMTcKMDA6MDE6MDguMDY4IC0tPiAwMDowMTowOS4wMjcKdGhleSBzaG91bGQgbW92ZSBvbi4uLgoKMTgKMDA6MDE6MTEuNDQ2IC0tPiAwMDowMToxMi40ODkKU29tZSBkby4uLgoKMTkKMDA6MDE6MTMuMTU2IC0tPiAwMDowMToxNC4zNjUKYnV0IG5vdCB1cy4KCjIwCjAwOjAxOjE3Ljg2OSAtLT4gMDA6MDE6MTkuMDM3Ck5BVEFTSEEgUk9NQU5PRkY6CkV2ZW4gaWYgdGhlcmUncyBhLi4uCgoyMQowMDowMToxOS4wMzcgLS0+IDAwOjAxOjIwLjAzOApzbWFsbCBjaGFuY2UuLi4KCjIyCjAwOjAxOjIxLjIwNiAtLT4gMDA6MDE6MjIuMjQ4CndlIG93ZSB0aGlzLi4uCgoyMwowMDowMToyMy45NTggLS0+IDAwOjAxOjI1LjYyNwp0byBldmVyeW9uZSB3aG8ncwpub3QgaW4gdGhpcyByb29tCgoyNAowMDowMToyNS42MjcgLS0+IDAwOjAxOjI2LjU0NAp0byB0cnkuCgoyNQowMDowMTozMC42NzMgLS0+IDAwOjAxOjMxLjg4MwpXZSB3aWxsLgoKMjYKMDA6MDE6MzMuODAyIC0tPiAwMDowMTozNC45NjkKU1RFVkUgUk9HRVJTOgpXaGF0ZXZlciBpdCB0YWtlcy4KCjI3CjAwOjAxOjM3LjA5NyAtLT4gMDA6MDE6MzguMTM5Ck5FQlVMQToKQWFhYWFoaGhoIQoKMjgKMDA6MDE6MzguNjQwIC0tPiAwMDowMTozOS41NTcKQ0xJTlQgQkFSVE9OOgpXaGF0ZXZlciBpdCB0YWtlcy4KCjI5CjAwOjAxOjQxLjc2OCAtLT4gMDA6MDE6NDIuODExCk5BVEFTSEEgUk9NQU5PRkY6CldoYXRldmVyIGl0IHRha2VzLgoKMzAKMDA6MDE6NDkuMjM0IC0tPiAwMDowMTo1MC4yNzYKVE9OWSBTVEFSSzoKV2hhdGV2ZXIgaXQgdGFrZXMuCgozMQowMDowMTo1OC4xNTkgLS0+IDAwOjAyOjAzLjg3MwrimarimaoKCjMyCjAwOjAyOjE5LjcyMiAtLT4gMDA6MDA6MDAuMDAwCkkgbGlrZSB0aGlzIG9uZS4KCgo="      default />
 
